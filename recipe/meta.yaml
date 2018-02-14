@@ -1,6 +1,6 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.30" %}
-{% set md5 = "b12316376427cc0e5da5a2fd8ef116e8" %}
+{% set version = "0.3.38" %}
+{% set md5 = "85d59c4f4f0fe6a0a413610c0537108b" %}
 
 package:
   name: {{ pkgname }}
