@@ -14,9 +14,7 @@ Summary: HOCON parser for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyhocon-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyhocon-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyhocon-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyhocon-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyhocon-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyhocon-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyhocon-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyhocon-feedstock)
 
 Current release info
 ====================
