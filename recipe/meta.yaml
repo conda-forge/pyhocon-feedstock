@@ -1,6 +1,6 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.38" %}
-{% set sha256 = "888b660fb86e643ded212207a1a1d260ccff293f19614e4d20d10f30621eeb26" %}
+{% set version = "0.3.39" %}
+{% set sha256 = "b35695eac7dd778419a6f048211d044d2564f9c5d4e8094ace9bdd37c3df6234" %}
 
 package:
   name: {{ pkgname }}
