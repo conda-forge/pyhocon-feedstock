@@ -9,7 +9,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  fn: '{{ pkgname }}-{{ version }}.{{ file_ext }}'
   url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.{{ file_ext }}
   '{{ hash_type }}': '{{ hash_value }}'
 
