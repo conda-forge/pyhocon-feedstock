@@ -1,27 +1,29 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.38" %}
-{% set sha256 = "888b660fb86e643ded212207a1a1d260ccff293f19614e4d20d10f30621eeb26" %}
+{% set version = "0.3.41" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set sha256 = "971e60c33c86f89109dd3af9322b74be5603d741dab4162f1c0e09bd9f12095b" %}
 
 package:
   name: {{ pkgname }}
   version: {{ version }}
 
 source:
-  fn: {{ pkgname }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
 
 build:
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pyhocon=pyhocon.tool:main
-  number: 0
 
 requirements:
   build:
+    - pip
     - python
-    - setuptools
     - pyparsing >=2.0.3
 
   run:
@@ -38,8 +40,13 @@ test:
 about:
   home: http://github.com/chimpler/pyhocon/
   license: Apache-2.0
+  license_family: APACHE
   summary: 'HOCON parser for Python'
+  description: 'HOCON parser for Python'
+  doc_url: https://pythonhosted.org/pyhocon/
+  dev_url: http://github.com/chimpler/pyhocon/
 
 extra:
   recipe-maintainers:
+    - nelson-liu
     - shahin
