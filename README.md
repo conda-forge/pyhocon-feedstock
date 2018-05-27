@@ -9,17 +9,20 @@ Feedstock license: BSD 3-Clause
 
 Summary: HOCON parser for Python
 
-
+HOCON parser for Python
 
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyhocon-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyhocon-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyhocon-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyhocon-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyhocon/badges/version.svg)](https://anaconda.org/conda-forge/pyhocon)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyhocon/badges/downloads.svg)](https://anaconda.org/conda-forge/pyhocon)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyhocon-green.svg)](https://anaconda.org/conda-forge/pyhocon) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyhocon.svg)](https://anaconda.org/conda-forge/pyhocon) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyhocon.svg)](https://anaconda.org/conda-forge/pyhocon) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyhocon.svg)](https://anaconda.org/conda-forge/pyhocon) |
 
 Installing pyhocon
 ==================
