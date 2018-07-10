@@ -1,8 +1,8 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.43" %}
+{% set version = "0.3.44" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7b5839365e608fdd6cb3ebf93068fc2b64e507e213377de7b0b38c399428843c" %}
+{% set hash_value = "077dcf92e20b91984b8b9cf07fb653575b4755e8d272597aab9928ca9d324915" %}
 
 package:
   name: {{ pkgname }}
