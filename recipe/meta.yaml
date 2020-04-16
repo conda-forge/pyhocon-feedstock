@@ -41,6 +41,7 @@ about:
   home: http://github.com/chimpler/pyhocon/
   license: Apache-2.0
   license_family: APACHE
+  license_file: LICENSE
   summary: 'HOCON parser for Python'
   description: 'HOCON parser for Python'
   doc_url: https://pythonhosted.org/pyhocon/
