@@ -1,22 +1,19 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.54" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "fb2b0f7a75e5781451fe673129c9b17f4f74ddd7bbc9cb79edc2e69bbdea9e97" %}
+{% set version = "0.3.56" %}
 
 package:
   name: {{ pkgname }}
   version: {{ version }}
 
 source:
-  fn: '{{ pkgname }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ pkgname }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.tar.gz
+  sha256: be156abd98fbf890b04382a6c52de20e80ac9fd7f64fd1ab9acc01ed5a71b157
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyhocon=pyhocon.tool:main
 
@@ -42,8 +39,8 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'HOCON parser for Python'
-  description: 'HOCON parser for Python'
+  summary: HOCON parser for Python
+  description: HOCON parser for Python
   doc_url: https://pythonhosted.org/pyhocon/
   dev_url: http://github.com/chimpler/pyhocon/
 
