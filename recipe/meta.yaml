@@ -23,11 +23,13 @@ requirements:
     - python
     - pyparsing >=2.0.3
     - asset
+    - setuptools
 
   run:
     - python
     - pyparsing >=2.0.3
     - asset
+    - setuptools
 
 test:
   imports:
