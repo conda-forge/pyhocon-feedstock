@@ -22,10 +22,12 @@ requirements:
     - pip
     - python
     - pyparsing >=2.0.3
+    - asset
 
   run:
     - python
     - pyparsing >=2.0.3
+    - asset
 
 test:
   imports:
