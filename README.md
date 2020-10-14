@@ -5,9 +5,13 @@ Home: http://github.com/chimpler/pyhocon/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyhocon-feedstock/blob/master/LICENSE.txt)
 
 Summary: HOCON parser for Python
+
+Development: http://github.com/chimpler/pyhocon/
+
+Documentation: https://pythonhosted.org/pyhocon/
 
 HOCON parser for Python
 
