@@ -1,5 +1,5 @@
 {% set pkgname = "pyhocon" %}
-{% set version = "0.3.55" %}
+{% set version = "0.3.56" %}
 
 package:
   name: {{ pkgname }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ pkgname }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.tar.gz
-  sha256: d1ce0e0e70eb194f469ec30a61b80e3fe3bbd9e291b371a2168bdb984d8cfba9
+  sha256: be156abd98fbf890b04382a6c52de20e80ac9fd7f64fd1ab9acc01ed5a71b157
 
 build:
   noarch: python
