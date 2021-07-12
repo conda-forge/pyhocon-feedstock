@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - pyparsing >=2.0.3
     - asset
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - pyparsing >=2.0.3
     - asset
     - setuptools
