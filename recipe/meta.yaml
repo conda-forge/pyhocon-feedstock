@@ -1,14 +1,13 @@
-{% set pkgname = "pyhocon" %}
-{% set version = "0.3.60" %}
+{% set name = "pyhocon" %}
+{% set version = "0.3.61" %}
 
 package:
-  name: {{ pkgname }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ pkgname }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ pkgname[0] }}/{{ pkgname }}/{{ pkgname }}-{{ version }}.tar.gz
-  sha256: ea18520ea126981e5320a72281f1a5fef2c27923f70cc54e1bd241c26525fd4b
+  url: https://github.com/chimpler/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 1354d772e990076d111c7da2412ee031387fcd9dfeb5e4359c68d887c0ac8f57
 
 build:
   noarch: python
@@ -21,22 +20,21 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - pyparsing >=2.0.3
-    - asset
-    - setuptools
 
   run:
     - python >=3.6
-    - pyparsing >=2.0.3
-    - asset
-    - setuptools
+    - pyparsing >=2,<4
 
 test:
   imports:
     - pyhocon
 
   commands:
+    - pip check
     - pyhocon --help
+
+  requires:
+    - pip
 
 about:
   home: http://github.com/chimpler/pyhocon/
@@ -52,3 +50,4 @@ extra:
   recipe-maintainers:
     - nelson-liu
     - shahin
+    - thewchan
