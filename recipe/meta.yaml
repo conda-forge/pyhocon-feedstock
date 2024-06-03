@@ -1,8 +1,8 @@
-{% set pkgname = "pyhocon" %}
+{% set name = "pyhocon" %}
 {% set version = "0.3.61" %}
 
 package:
-  name: {{ pkgname }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
