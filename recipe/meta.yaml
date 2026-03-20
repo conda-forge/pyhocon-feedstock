@@ -1,5 +1,5 @@
 {% set name = "pyhocon" %}
-{% set version = "0.3.61" %}
+{% set version = "0.3.63" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/chimpler/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 1354d772e990076d111c7da2412ee031387fcd9dfeb5e4359c68d887c0ac8f57
+  sha256: 93b16d7a59cb79a9728e8e1eeefe00b3614ead77e3c9f873ec3cafe61fe64a49
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyhocon=pyhocon.tool:main
